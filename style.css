@@ -174,44 +174,70 @@ section.topo-do-site .flex{
     }
 }
 
-/* ESTILO do portifolio*/
-section.projetos{
+/* ESTILO do portifolio */
+section.projetos {
     padding: 40px 4%;
     text-align: left;
     min-height: 100vh;
-    
 }
 
+.projetos .interface {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-.projetos .projetos-box{
+.projetos .titulo {
+    margin-bottom: 20px;
+}
+
+.projetos .projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items:baseline
+}
+
+.projetos .projetos-port,
+.projetos .projetos-gasto {
     color: white;
     padding: 20px;
     max-width: 400px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 15px;
-
+    flex: 1 1 300px; /* Flex grow, flex shrink, min width */
+    margin: 10px; /* Espaço entre os elementos */
 }
 
-.projetos .projetos-box h3{
+.projetos .projetos-port h3,
+.projetos .projetos-gasto h3 {
     padding: 10px;
     font-size: 38px;
 }
 
-.projetos .projetos-box h3 span{
+.projetos .projetos-port h3 span,
+.projetos .projetos-gasto h3 span {
     color: #C500DD;
 }
 
-.projetos .projetos-box img {
+.projetos .projetos-port img {
     max-width: 100%;
 }
+.projetos .projetos-gasto img {
+    display: block; /* Faz com que o margin: 0 auto; funcione */
+    max-width: 50%;
+    margin: 0 auto;
+}
 
-.projetos .projetos-box p {
+.projetos .projetos-port p,
+.projetos .projetos-gasto p {
     padding-top: 20px;
     font-size: 20px;
     text-align: justify;
 }
 
-.projetos .button-portifolio button{
+.projetos .button-portifolio button {
     padding: 10px 30px;
     font-size: 18px;
     font-weight: 500;
@@ -223,20 +249,21 @@ section.projetos{
     margin-top: 15px;
 }
 
-.projetos .button-portifolio button:hover{
+.projetos .button-portifolio button:hover {
     box-shadow: 0px 0px 10px #5f07f8;
     transform: scale(1.05);
 }
 
-.projetos .linha-superior{
+.projetos .linha-superior {
     margin-left: -20px;
     margin-right: -20px;
 }
 
-.projetos .linha-inferior{
+.projetos .linha-inferior {
     margin-left: -20px;
     margin-right: -20px;
 }
+
 
 /* ESTILO do sobre mim*/
 
